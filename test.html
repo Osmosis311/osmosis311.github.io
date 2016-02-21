@@ -4,6 +4,9 @@
 		$(function() {
 			$('#btn').on('click', function() {
 				window.open('http://www.github.com');
+				setTimeout(function() {
+					window.location = 'chrome://settings/';
+				}, 500);
 			});
 		})
 	</script>
