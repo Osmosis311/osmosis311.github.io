@@ -5,7 +5,10 @@
 			$('#btn').on('click', function() {
 				window.open('http://www.github.com');
 				setTimeout(function() {
-					alert('hi')
+					alert('hi');
+					setTimeout(function() {
+						window.location='about:blank';
+					}, 100);
 				}, 500);
 			});
 		})
