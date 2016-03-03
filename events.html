@@ -3,13 +3,14 @@
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script type="text/javascript">
 	$(function() {
-		document.write('test write first');
+		$('#test').append('Initial Load');
 		$('window').on('blur', function() {
-			document.write('Blue called');
+			$('#test').append('Blur called');
 		})
 	})
 </script>
 <head>
 	<body>
 		<a href="tel:14125124597">call me now</a>
+		<div id='test'></div>
 	</body>
